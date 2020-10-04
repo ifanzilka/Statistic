@@ -127,3 +127,9 @@ FAQ -> https://cran.r-project.org/doc/FAQ/R-FAQ.html
         rm(list = ls())
  
  character(0) - озночает что все удалено
+#### Функция деления 
+
+        divide <- function(x, y) 
+        {
+            x / y
+        }
