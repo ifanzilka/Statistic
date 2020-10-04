@@ -100,3 +100,13 @@ FAQ -> https://cran.r-project.org/doc/FAQ/R-FAQ.html
     }
     addten(cats)
 
+#### Оператор  глобального присваивания : (<<-)
+В переменной dogs  хранится 2
+
+    addten <- function(x)
+    {
+        x <<- x + 10
+    }
+    addten(dogs)
+    
+Результат :
