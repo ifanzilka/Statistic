@@ -29,3 +29,9 @@ FAQ -> https://cran.r-project.org/doc/FAQ/R-FAQ.html
         pets <- cats + dogs
         
 ### Глобальное окружение:
+Посмотреть переменные командой ls (lsit)
+        
+        ls
+Результат :
+
+        [1] "cats" "dogs" "pets"
