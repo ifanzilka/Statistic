@@ -112,3 +112,5 @@ FAQ -> https://cran.r-project.org/doc/FAQ/R-FAQ.html
 Результат :
 
     12
+
+То есть мы создали глобальную переменную moredogs
