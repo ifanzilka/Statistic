@@ -105,8 +105,10 @@ FAQ -> https://cran.r-project.org/doc/FAQ/R-FAQ.html
 
     addten <- function(x)
     {
-        x <<- x + 10
+        moredogs <<- x + 10
     }
     addten(dogs)
-    
+    moredogs
 Результат :
+
+    12
