@@ -1,3 +1,3 @@
-### For Linux
+# For Linux
 
-## Step 1: Update System
+### Step 1: Update System
