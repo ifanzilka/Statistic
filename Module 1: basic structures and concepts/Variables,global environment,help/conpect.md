@@ -77,3 +77,16 @@ FAQ -> https://cran.r-project.org/doc/FAQ/R-FAQ.html
 Результат :
 
         [1] 2
+
+### Окружение функций:
+
+В переменной cats хранится 5
+
+    addten <- function(x)
+    {
+        x <- x + 10
+    }
+    addten(cats)
+Результат :
+        
+    [1] 5
