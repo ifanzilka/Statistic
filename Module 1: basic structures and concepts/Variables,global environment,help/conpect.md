@@ -9,4 +9,4 @@ FAQ -> https://cran.r-project.org/doc/FAQ/R-FAQ.html
 
         ?['Что спрашиваем']
 
-## Основы основ
+### Основы основ:
