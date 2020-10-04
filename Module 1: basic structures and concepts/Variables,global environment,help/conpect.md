@@ -114,3 +114,5 @@ FAQ -> https://cran.r-project.org/doc/FAQ/R-FAQ.html
     12
 
 То есть мы создали глобальную переменную moredogs
+
+#### Удаление переменных из окружения
