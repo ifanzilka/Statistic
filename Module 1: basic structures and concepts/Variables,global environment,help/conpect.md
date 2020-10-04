@@ -24,4 +24,7 @@ FAQ -> https://cran.r-project.org/doc/FAQ/R-FAQ.html
 ### Переменные:
 #### Оператор присваивания : (<-)
  
+        cats <- 5
+        dogs <- 2
+        pets <- cats + dogs
         
