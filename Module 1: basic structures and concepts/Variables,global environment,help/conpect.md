@@ -20,3 +20,8 @@ FAQ -> https://cran.r-project.org/doc/FAQ/R-FAQ.html
 
         sin(pi / 6)
         Результат :[1] 0.5
+        
+### Переменные:
+ ## Оператор присваивания : (<-)
+ 
+        
