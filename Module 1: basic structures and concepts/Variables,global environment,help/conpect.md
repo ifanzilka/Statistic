@@ -121,5 +121,8 @@ FAQ -> https://cran.r-project.org/doc/FAQ/R-FAQ.html
         rm(dogs)
         rm(moredogs)
         ls()
- Результат :
+        
+Удаляем все:
+        
+        rm(list = ls())
  
