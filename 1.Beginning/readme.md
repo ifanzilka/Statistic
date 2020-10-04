@@ -11,3 +11,15 @@ We need to install r-base package which contains the basic R functions that let 
         sudo apt -y install r-base
 ### Step 3: Download and Install RStudio
 Now visit the  [RStudio downloads page](https://rstudio.com/products/rstudio/download/#download) to grab the latest release of RStudio for Debian based Linux distributions.
+
+        sudo apt -y install wget
+        wget https://download1.rstudio.org/desktop/xenial/amd64/rstudio-1.2.5042-amd64.deb
+        sudo apt install ./rstudio-1.2.5042-amd64.deb
+If you encounter any dependency problems, run:
+        
+        sudo apt -f install
+### Step 4: Launch RStudio
+Launch RStudio from Applications search section of your Desktop Environment or from the terminal.
+    
+    rstudio
+
