@@ -116,3 +116,10 @@ FAQ -> https://cran.r-project.org/doc/FAQ/R-FAQ.html
 То есть мы создали глобальную переменную moredogs
 
 #### Удаление переменных из окружения
+Для удаления используем функцию rm() -remote
+
+        rm(dogs)
+        rm(moredogs)
+        ls()
+ Результат :
+ 
