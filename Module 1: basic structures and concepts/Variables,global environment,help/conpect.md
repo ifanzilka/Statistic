@@ -90,3 +90,13 @@ FAQ -> https://cran.r-project.org/doc/FAQ/R-FAQ.html
 Результат :
         
     [1] 5
+Такиим образом вне функции переменная не изменилась
+
+А теперь :
+
+    addten <- function(x)
+    {
+        return (x + 10)
+    }
+    addten(cats)
+
