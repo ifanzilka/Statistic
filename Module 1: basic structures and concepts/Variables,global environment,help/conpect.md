@@ -1,4 +1,6 @@
 ## [Back](https://github.com/ifanzilka/Statistic_for_R/blob/main/Module%201:%20basic%20structures%20and%20concepts/readme.md)
+[Описание функций в R](https://aakinshin.net/ru/posts/r-functions/)
+
 Встроенная справка :
 
     help("sin")
