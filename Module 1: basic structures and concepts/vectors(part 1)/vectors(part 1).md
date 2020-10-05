@@ -184,7 +184,7 @@ logical — integer — double — character
 Результат:
     
     [1] "character"
-**Вывыод** 2:
+**Вывод** 2:
 
     b
        
