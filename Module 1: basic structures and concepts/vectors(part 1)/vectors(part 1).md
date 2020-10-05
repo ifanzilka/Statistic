@@ -191,3 +191,12 @@ logical — integer — double — character
 Результат:
     
     [1] "5"   "0"   "1.5" "abc"
+## Принудительное приведение типов осуществляется функциями as.*:
+**Пример** 1:
+
+    #as.double(b)
+    as.numeric(b
+      
+Результат:
+    
+    Warning: NAs introduced by coercion
