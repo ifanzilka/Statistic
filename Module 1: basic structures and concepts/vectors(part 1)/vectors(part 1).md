@@ -172,7 +172,22 @@ logical — integer — double — character
     b <- c(FALSE, 1.5)
     typeof(b)
     
-То есть False привельс к 0 типа double    
+То есть False привелся к 0 типа double    
 Результат:
     
     [1] "double"
+**Пример** 2:
+
+    b <- c(5, b, "abc")
+    typeof(b)
+      
+Результат:
+    
+    [1] "character"
+**Вывыод** 2:
+
+    b
+       
+Результат:
+    
+    [1] "5"   "0"   "1.5" "abc"
