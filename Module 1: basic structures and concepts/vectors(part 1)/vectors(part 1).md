@@ -246,3 +246,14 @@ b - тип character попытаемся првиести к численным
 Результат:
     
     [1] "uno"              "dos"              "universal answer" ""
+Или так :
+
+**Пример** 2:
+
+    names(a) <- c("one", "two", "forty two", "ninety nine")
+    a
+      
+Результат:
+    
+    one         two   forty two ninety nine 
+     1           2          42          99
