@@ -131,5 +131,5 @@ FAQ -> https://cran.r-project.org/doc/FAQ/R-FAQ.html
 
         divide <- function(x, y) 
         {
-            x / y
+            return (x / y)
         }
