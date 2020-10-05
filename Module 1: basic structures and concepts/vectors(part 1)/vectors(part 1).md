@@ -257,3 +257,7 @@ b - тип character попытаемся првиести к численным
     
     one         two   forty two ninety nine 
      1           2          42          99
+
+Избавляемся от веткора имен :
+      
+      names(a) <- NUL
