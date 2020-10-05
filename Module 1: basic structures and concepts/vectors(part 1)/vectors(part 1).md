@@ -202,3 +202,13 @@ b - тип character попытаемся првиести к численным
     
     Warning: NAs introduced by coercion
     [1] 5.0 0.0 1.5  NA
+
+**Пример** 2:
+b - тип character попытаемся првиести к численным
+
+    as.integer(b)
+      
+Результат:
+    
+    Warning: NAs introduced by coercion
+    [1]  5  0  1 NA
