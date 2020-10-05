@@ -201,3 +201,4 @@ b - тип character попытаемся првиести к численным
 Результат:
     
     Warning: NAs introduced by coercion
+    [1] 5.0 0.0 1.5  NA
