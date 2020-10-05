@@ -193,9 +193,10 @@ logical — integer — double — character
     [1] "5"   "0"   "1.5" "abc"
 ## Принудительное приведение типов осуществляется функциями as.*:
 **Пример** 1:
+b - тип character попытаемся првиести к численным
 
     #as.double(b)
-    as.numeric(b
+    as.numeric(b)
       
 Результат:
     
