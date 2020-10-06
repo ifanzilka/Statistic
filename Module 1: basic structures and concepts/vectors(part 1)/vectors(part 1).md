@@ -432,3 +432,48 @@ b - тип character попытаемся првиести к численным
     ## [1] 80 90
 
 
+
+
+## Индексация по имени
+
+Для именованных векторов работает конструкция вида
+
+    a[c("two", "one", "forty two")]
+
+    ##       two       one forty two 
+    ##         2         1        42
+#
+    a[c("forty two", "forty three", "forty four")]
+
+    ## forty two      <NA>      <NA> 
+    ##        42        NA        NA
+#
+## Функции all и any
+
+    all(x < 200); all(x > 20)
+
+    ## [1] TRUE
+
+    ## [1] FALSE
+#
+    any(x > 150); any(x < 15)
+
+    ## [1] FALSE
+
+    ## [1] TRUE
+
+# Функция which
+
+    which(x >= 50)
+
+    ## [1]  5  6  7  8  9 10
+#
+    which.min(x)
+
+    ## [1] 1
+#
+    which.max(x)
+
+    ## [1] 10
+
+
