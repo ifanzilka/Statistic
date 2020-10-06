@@ -1,4 +1,4 @@
 ## [Back](https://github.com/ifanzilka/Statistic_for_R/blob/main/README.md)
 * [1.2 Variables,global environment,help](https://github.com/ifanzilka/Statistic_for_R/blob/main/Module%201:%20basic%20structures%20and%20concepts/Variables,global%20environment,help/conpect.md)
 * [1.3 Vectors (part 1)](https://github.com/ifanzilka/Statistic_for_R/blob/main/Module%201:%20basic%20structures%20and%20concepts/vectors(part%201)/vectors(part%201).md)
-* [1.4 Управляющие конструкции, работа с пакетами]()
+* [1.4 Управляющие конструкции, работа с пакетами](https://github.com/ifanzilka/Statistic_for_R/blob/main/Module%201:%20basic%20structures%20and%20concepts/1.4%20%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%8F%D1%8E%D1%89%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D0%B8%2C%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D1%81%20%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%B0%D0%BC%D0%B8/package.md)
