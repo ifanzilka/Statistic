@@ -337,5 +337,25 @@ b - тип character попытаемся првиести к численным
     ## Warning in 1:5 + 0:1: longer object length is not a multiple of shorter object length
     ## [1] 1 3 3 5 5
 
+**Пример** 1:
 
+    1:10 + 3
+      
+Результат:
+    
+    [1]  4  5  6  7  8  9 10 11 12 13
+**Пример** 2:
+
+    (5:8) ^ 2
+      
+Результат:
+    
+    [1] 25 36 49 64
+**Пример** 3:
+    
+    1:4 >= 3
+      
+Результат:
+    
+    [1] FALSE FALSE  TRUE  TRUE
 
