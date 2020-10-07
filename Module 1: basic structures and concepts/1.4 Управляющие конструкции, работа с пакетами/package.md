@@ -77,8 +77,16 @@ Cинтаксис ifelse :
         print(i)
     }
 ## Циклы for
+
+Пример 1:
     
     for (i in 2:8){
         if(i %% 2 == 0) print(i)
     }
+Пример 2:
 
+    for (i in letters){
+        if (i == "b") next
+        if (i == "d") break
+        print(i)
+    }
