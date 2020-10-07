@@ -61,3 +61,11 @@ Cинтаксис ifelse :
  Результат:
         
         [1] 120
+## Циклы repait
+    
+    i <- 0
+    repeat {
+        i <- i + runif(1)
+        print(i)
+        if (i > 5) break
+    }
