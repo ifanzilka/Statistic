@@ -61,11 +61,18 @@ Cинтаксис ifelse :
  Результат:
         
         [1] 120
-## Циклы repait
+## Циклы repeat
     
     i <- 0
     repeat {
         i <- i + runif(1)
         print(i)
         if (i > 5) break
+    }
+## Циклы while
+    
+    i <- 2^14
+    while (i > 1000){
+        i <- i / 2
+        print(i)
     }
