@@ -10,8 +10,7 @@
     if (sqrt(2) > 1.5)
     {
         print("Good")
-    }
-    else
+    }else
     {
         print("Bad")
     }
