@@ -90,3 +90,12 @@ Cинтаксис ifelse :
         if (i == "d") break
         print(i)
     }
+
+    k <- 0
+    for (i in x)
+    {
+        if (i >= -0.2 && i <= 0.3)
+        {
+            k <- k + 1
+        }
+    }
