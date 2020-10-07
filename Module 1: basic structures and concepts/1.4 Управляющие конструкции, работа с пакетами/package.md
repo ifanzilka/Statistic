@@ -76,3 +76,9 @@ Cинтаксис ifelse :
         i <- i / 2
         print(i)
     }
+## Циклы for
+    
+    for (i in 2:8){
+        if(i %% 2 == 0) print(i)
+    }
+
