@@ -4,3 +4,5 @@
 Синатаксис :
 
     if (<condition>) {<do somthing>} else {<do another thing>}
+
+Здесь <condition>  логический вектор длины 1.
