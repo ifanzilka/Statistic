@@ -3,3 +3,4 @@
 ### if и  else
 Синатаксис :
 
+    if (<condition>) {<do somthing>} else {<do another thing>}
