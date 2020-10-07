@@ -58,4 +58,6 @@ Cинтаксис ifelse :
         product = 5 * 5,
         factorial = factorial(5),
         0)
-    
+ Результат:
+        
+        [1] 120
