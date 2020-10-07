@@ -5,4 +5,4 @@
 
     if (<condition>) {<do somthing>} else {<do another thing>}
 
-Здесь <condition>  логический вектор длины 1.
+Здесь condition  логический вектор длины 1.
