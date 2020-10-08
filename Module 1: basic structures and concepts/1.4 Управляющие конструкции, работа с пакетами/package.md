@@ -148,3 +148,18 @@ Cинтаксис ifelse :
                                     }
 ## Пакеты(packages)
 Пакеты и библиотеки разные вещи!
+Список библиотек :
+        
+        .libPaths()
+ Результат:
+ 
+        [1] "/home/ifanzilka/R/x86_64-pc-linux-gnu-library/3.6"
+        [2] "/usr/local/lib/R/site-library"                    
+        [3] "/usr/lib/R/site-library"                          
+        [4] "/usr/lib/R/library"   
+        
+ Пакеты хранятся в специальном репозитории (CRAN)    https://cran.r-project.org/
+ Также есть на github.
+  
+  Просмотр 
+        installed.packages()
