@@ -1,5 +1,18 @@
 ## [Back](https://github.com/ifanzilka/Statistic_for_R/blob/main/Module%201:%20basic%20structures%20and%20concepts/readme.md)
-
+# Оглавление
+* [if и  else]()
+* [ifelse]()
+* [Множественный выбор switch]()
+* [Циклы repeat]()
+* [Циклы while]()
+* [Циклы for]()
+* [for против векторизации ]()
+* [Задача ]()
+* [Пакеты(packages)]()
+* [Подключение пакетов ]()
+* [Пакеты(packages)]()
+* [Установка пакетов из CRAN]()
+* [Обновление пакетов ]()
 ## if и  else
 Синатаксис :
 
