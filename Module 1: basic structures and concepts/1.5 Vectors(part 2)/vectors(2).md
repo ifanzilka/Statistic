@@ -18,3 +18,16 @@
       }
     }
     y
+2 Способ :
+    
+    # fizz-buzz, vector-oriented style
+    x <- 1:100
+    z <- 1:100
+    x %% 5
+    x %% 5 == 0
+    z[x %% 5 == 0]
+    z[x %% 5 == 0] <- "buzz"
+    z[x %% 3 == 0] <- "fizz"
+    z[x %% 15 == 0] <- "fizz buzz"
+    z
+    all(y == z)
