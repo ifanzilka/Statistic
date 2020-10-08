@@ -141,3 +141,8 @@ Cинтаксис ifelse :
                             )
                             )  
                         }
+Или так 
+        
+        dice_roll <- function(n) {
+        as.integer(runif(n, 1, 7))
+                                    }
