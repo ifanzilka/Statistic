@@ -115,3 +115,8 @@ Cинтаксис ifelse :
     system.time({
        y <- sqrt(v)        
     })
+
+Сравниваем ветора :
+
+    identical(x,y)
+    [1] TRUE
