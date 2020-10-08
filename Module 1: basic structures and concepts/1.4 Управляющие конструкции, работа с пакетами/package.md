@@ -161,5 +161,35 @@ Cинтаксис ifelse :
  Пакеты хранятся в специальном репозитории (CRAN)    https://cran.r-project.org/
  Также есть на github.
   
-  Просмотр 
-        installed.packages()
+  Просмотр установленных пакетов :
+        
+            installed.packages()
+## Подключение пакетов 
+Подкючаем пакет под названием grid:
+    
+    library(grid)
+Используем библиотеку:
+    
+    grid.newpage()
+Рисуем квадрат
+    
+    grid.lines()
+Рисуем линию    
+
+## Установка пакетов из CRAN
+    
+ Cинтаксис :
+    
+    install.packages("Название пакета",dependencies = TRUE)
+ 2 аргумент для зависимостей.   
+ 
+Пример     
+    
+    install.packages("xts",dependencies = TRUE)
+    library(xts)
+### Обновление пакетов 
+    
+     update.packages()
+Полезная функция если что то не работает :
+    
+    sessionInfo()
