@@ -108,3 +108,10 @@ Cинтаксис ifelse :
         x <- 0
         for (i in v) x[i] <- sqrt(v[i])        
     })
+
+Сразу к вектору :
+
+    v <- 1:1e5
+    system.time({
+       y <- sqrt(v)        
+    })
