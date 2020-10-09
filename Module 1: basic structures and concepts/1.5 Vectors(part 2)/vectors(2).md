@@ -2,11 +2,11 @@
 ## [Back](https://github.com/ifanzilka/Statistic_for_R/blob/main/Module%201:%20basic%20structures%20and%20concepts/readme.md)
 
 # Оглавление
-* [Fizz - buzz]()
-* [Прогрессия ]()
-* [Рандом]()
-* [Задача 1]()
-* [Задача 2]()
+* [Fizz - buzz](#fizz---buzz)
+* [Прогрессия ](#прогрессия)
+* [Рандом](#рандом)
+* [Задача 1](#задача-1)
+* [Задача 2](#задача-2)
 
 ## Fizz - buzz
 
