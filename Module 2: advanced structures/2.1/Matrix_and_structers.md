@@ -296,3 +296,28 @@ OR ПО столбцам
     ## [5,]   13   13   15   20   25
 
 Такая функция (не имеющая имени) называется анонимной
+
+
+## rowSums, rowMeans, colSums, colMeans
+## Наиболее частые операции по строкам и столбцам – sum и mean:
+
+    m <- matrix(1:25, 5)
+    rowSums(m)
+#
+    ## [1] 55 60 65 70 75
+
+Проверим, что это действительно так:
+
+    all.equal(rowSums(m), apply(m, 1, sum))
+#
+
+    ## [1] TRUE
+
+OR
+
+    all.equal(colMeans(m), apply(m, 2, mean))
+#
+    ## [1] TRUE
+
+
+
