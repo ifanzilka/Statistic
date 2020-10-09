@@ -338,4 +338,19 @@ OR
       x <- abs(v - n)
       which(x == min(x))
     }
+## Соединяем матрицы
 
+    # bind matrices diagonally  
+    bind_diag <- function(m1, m2, fill) {
+      m3 <- matrix(fill, 
+               nrow = nrow(m1) + nrow(m2), 
+               ncol = ncol(m1) + ncol(m2))
+      m3[1:nrow(m1), 1:ncol(m1)] <- m1
+      m3[nrow(m1) + 1:nrow(m2), ncol(m1) + 1:ncol(m2)] <- m2
+      m3  
+    }
+#
+    m1 <- matrix(1:12, nrow = 3)
+    m2 <- matrix(10:15, ncol = 3)
+    bind_diag(m1, m2, fill = NA)
+    bind_diag(m2, m1, fill = 0)
