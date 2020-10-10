@@ -585,3 +585,63 @@ OR
     ## $string
     ## [1] "Citius, altius, fortius"
 
+
+
+
+## Применение функций к списку: lapply
+
+      l <- list(a = c("12", "34"), b = LETTERS[5:10], c = 1:5)
+      lapply(l, length)
+#
+
+Применяем функцию length
+    
+    ## $a
+    ## [1] 2
+    ## 
+    ## $b
+    ## [1] 6
+    ## 
+    ## $c
+    ## [1] 5
+
+
+## Применение функций к списку: lapply, sapply
+
+    lapply(l, paste, collapse = "|")
+склеиваем
+
+    ## $a
+    ## [1] "12|34"
+    ## 
+    ## $b
+    ## [1] "E|F|G|H|I|J"
+    ## 
+    ## $c
+    ## [1] "1|2|3|4|5"
+Или  так
+
+    #lapply(l, function(s) paste(s, collapse = "|"))
+
+Чтобы получился вектор
+
+    sapply(l, paste, collapse = "|")
+#
+    ##             a             b             c 
+    ##       "12|34" "E|F|G|H|I|J"   "1|2|3|4|5"
+
+
+
+## Частичное дополнение по $ и аргументам функции
+
+    l <- list(some_name = 1, incredibly_long_name = 2)
+    l$incr + 1
+#
+    ## [1] 3
+Сокраещеам запись функций
+
+    f <- function(x, ridiculously_long_arg) x + ridiculously_long_arg
+    f(3, ridic = 5) #f(3, 5)
+ # 
+    ## [1] 8
+
