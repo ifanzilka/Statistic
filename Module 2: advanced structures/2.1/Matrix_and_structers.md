@@ -247,6 +247,7 @@ OR
 Другие примеры: c, paste, paste0, sum.
 
 ## Применение функций к матрице: apply
+Применение функций к строчкам и столбцам
 
     m <- matrix(1:25, 5)
     f <- function(x) sum(x^2)
@@ -645,3 +646,33 @@ OR
  # 
     ## [1] 8
 
+# Задачи
+Возвращаем список, возвращаем позиции максимумов.
+### get the longest element
+
+    get_longest <- function(l) {
+      len <- sapply(l, length)
+      list(number = which.max(len), element = l[[which.max(len)]])
+    }
+ Или так
+ 
+    get_longest <- function(l){
+      len <- sapply(l, length)
+      ind <- which(len == max(len))
+      list(number = ind, element = l[ind])
+    }
+# generate list with random length and contents
+    gen_list <- function(n_elements, max_len, seed = 111) {
+      set.seed(seed)
+      len <- sample(1:max_len, n_elements)
+      lapply(1:n_elements, function(i) rnorm(len[i]))
+    }
+#
+
+    l1 <- gen_list(4, 10)
+    l1
+    gl1 <- get_longest(l1)
+    gl1$number
+    l2 <- gen_list(4, 10, 777)
+    l2
+    get_longest(l2)
