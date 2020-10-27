@@ -101,6 +101,7 @@ OR
 #
     ## [1] 1 3
 OR
+    
     grepl("труд", s)
 #
     ## [1]  TRUE FALSE  TRUE FALSE
