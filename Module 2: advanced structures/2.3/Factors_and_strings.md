@@ -105,7 +105,7 @@ OR
     grepl("труд", s)
 #
     ## [1]  TRUE FALSE  TRUE FALSE
-OR
+OR (Замена)
     
     gsub("\\b[[:alpha:]]{4,5}\\b", "####",  s)
 #
