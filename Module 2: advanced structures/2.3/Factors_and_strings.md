@@ -325,3 +325,136 @@ OR
 
 
 
+## Уровни фактора
+
+Индексирование определено для == и !=:
+
+Замена  A на  Z
+
+    f[f == "A"] <- "Z"
+    f
+#
+    ##  [1] O O B L J I Y H G D Z Z V F Z Z Z Y I G W S B D O Z Y X M Z
+    ## Levels: A B D F G H I J L M O S V W X Y Z
+OR
+
+
+
+    (f <- droplevels(f))
+#
+    ##  [1] O O B L J I Y H G D Z Z V F Z Z Z Y I G W S B D O Z Y X M Z
+    ## Levels: B D F G H I J L M O S V W X Y Z
+
+
+
+## Преобразование уровней фактора
+
+Применить ко всем нижний регистр
+
+    levels(f) <- tolower(levels(f))
+    #levels(f) <- letters[LETTERS %in% levels(f)]
+    f
+#
+
+    ##  [1] o o b l j i y h g d z z v f z z z y i g w s b d o z y x m z
+    ## Levels: b d f g h i j l m o s v w x y z
+OR
+
+    levels(f)[1] <- "bbb"
+    f
+#
+
+    ##  [1] o   o   bbb l   j   i   y   h   g   d   z   z   v   f   z   z   z   y   i   g   w   s   bbb d   o   z  
+    ## [27] y   x   m   z  
+    ## Levels: bbb d f g h i j l m o s v w x y z
+
+
+## Упорядоченные факторы
+
+  Если категории качественной переменной упорядочены, то это порядковая переменная
+  
+  Упорядоченный фактор: функция ordered либо аргумент ordered = TRUE для factor
+
+
+
+    temp <- c("freezing cold", "cold", "comfortable", "hot", "burning hot")
+    ft <- ordered(sample(temp, 14, replace = TRUE), temp)
+    ft
+#
+
+    ##  [1] burning hot   freezing cold hot           cold          hot           hot           burning hot  
+    ##  [8] hot           cold          cold          hot           burning hot   comfortable   hot          
+    ## Levels: freezing cold < cold < comfortable < hot < burning hot
+
+OR
+
+    ft[ft >= "hot"]
+#
+
+    ## [1] burning hot hot         hot         hot         burning hot hot         hot         burning hot
+    ## [9] hot        
+    ## Levels: freezing cold < cold < comfortable < hot < burning hot
+
+
+## Преобразование количественной переменной в качественную
+
+cut разбивает numeric вектор на интервалы
+
+table производит подсчёт количества элементов для каждого уровня фактора
+
+    cut(rnorm(10), -5:5)
+#
+
+    ##  [1] (-1,0]  (-1,0]  (-2,-1] (1,2]   (0,1]   (0,1]   (-2,-1] (0,1]   (1,2]   (1,2]  
+    ## Levels: (-5,-4] (-4,-3] (-3,-2] (-2,-1] (-1,0] (0,1] (1,2] (2,3] (3,4] (4,5]
+
+OR
+
+    table(cut(rnorm(1000), -5:5))
+#
+Распределение по интервалам
+(Нормальное распределение)
+
+    ## 
+    ## (-5,-4] (-4,-3] (-3,-2] (-2,-1]  (-1,0]   (0,1]   (1,2]   (2,3]   (3,4]   (4,5] 
+    ##       0       3      27     122     353     322     148      20       5       0
+
+
+
+## options
+
+   У сессии R есть набор активных настроек, отвечающих за подсчёт и вывод результатов вычислений
+   
+   ?options :
+        digits – количество знаков при печати чисел
+        error – поведение при ошибке
+        width – длина строки при печати векторов и матриц
+   
+   По умолчанию, все строковые переменные становятся факторами, отменить такое поведение можно вызовом options(stringsAsFactors = FALSE)
+
+
+
+## tapply
+
+  Факторы чаще всего встречаются как переменные в дата фреймах
+  
+  Одна из наиболее распространённых задач – подсчёт некоторой статистики по группам
+
+    #?warpbreaks
+    str(warpbreaks)
+#
+
+    ## 'data.frame':    54 obs. of  3 variables:
+    ##  $ breaks : num  26 30 54 25 70 52 51 26 67 18 ...
+    ##  $ wool   : Factor w/ 2 levels "A","B": 1 1 1 1 1 1 1 1 1 1 ...
+    ##  $ tension: Factor w/ 3 levels "L","M","H": 1 1 1 1 1 1 1 1 1 2 ...
+OR
+   
+    tapply(warpbreaks$breaks, warpbreaks$wool, max)
+#
+
+    ##  A  B 
+## 70 44
+
+
+
