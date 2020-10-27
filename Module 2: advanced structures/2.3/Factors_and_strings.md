@@ -281,3 +281,47 @@ OR
 
 
 
+## Факторы
+
+В статистике существует деление на количественные и качественные переменные
+
+Для качественных переменных есть factor
+
+Фактор – это гибрид целочисленного (integer) и строкового (character) вектора
+
+    set.seed(1337)
+    f <- factor(sample(LETTERS, 30, replace = TRUE))
+    f
+#
+    ##  [1] O O B L J I Y H G D Z Z V F Z A Z Y I G W S B D O Z Y X M Z
+    ## Levels: A B D F G H I J L M O S V W X Y Z
+
+
+
+
+## Уровни фактора
+
+    as.numeric(f)
+#
+    ##  [1] 11 11  2  9  8  7 16  6  5  3 17 17 13  4 17  1 17 16  7  5 14 12  2  3 11 17 16 15 10 17
+OR
+
+    as.character(f)
+#
+
+    ##  [1] "O" "O" "B" "L" "J" "I" "Y" "H" "G" "D" "Z" "Z" "V" "F" "Z" "A" "Z" "Y" "I" "G" "W" "S" "B" "D" "O" "Z"
+    ## [27] "Y" "X" "M" "Z"
+OR
+
+    levels(f)
+#
+    ##  [1] "A" "B" "D" "F" "G" "H" "I" "J" "L" "M" "O" "S" "V" "W" "X" "Y" "Z"
+OR
+
+    nlevels(f)
+OR
+    
+    ## [1] 17
+
+
+
