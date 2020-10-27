@@ -178,6 +178,39 @@ OR
     ##  [1] "JAN" "FEB" "MAR" "APR" "MAY" "JUN" "JUL" "AUG" "SEP" "OCT" "NOV" "DEC"
 
 
+
+
+## Задача
+
+В память о бедном Йорике я подготовил небольшую тираду и обработал её средствами stringr. Вы не могли бы дать мне небольшой лингвистический обзор этого предложения? Выполните следующий код, чтобы начать работу с фразой в удобной форме:
+
+library(stringr)
+
+hamlet <- "To be, or not to be: that is the question:
+Whether 'tis nobler in the mind to suffer
+The slings and arrows of outrageous fortune,
+Or to take arms against a sea of troubles,
+And by opposing end them?"
+
+hamlet <- str_replace_all(hamlet, "[:punct:]", "")
+hamlet <- tolower(unlist(str_split(hamlet, "[:space:]")))
+ 
+P.S. Обратите внимание, как я препарировал предложение регулярными выражениями, чтобы вам было удобно. Все ли шаги понятны?
+P.P.S. При копировании кода сверху пропадают пробелы. Либо добавьте их обратно в текстовом редакторе, либо сразу возьмите конечный результат:
+
+hamlet <- c("to", "be", "or", "not", "to", "be", "that", "is", "the", "question", 
+"whether", "tis", "nobler", "in", "the", "mind", "to", "suffer", 
+"the", "slings", "and", "arrows", "of", "outrageous", "fortune", 
+"or", "to", "take", "arms", "against", "a", "sea", "of", "troubles", 
+"and", "by", "opposing", "end", "them")
+
+Решение.
+
+    sum(hamlet=="to")
+    sum(grepl("[fqw]", hamlet))
+    sum(grepl("b.", hamlet))
+    sum(nchar(hamlet)==7)
+
 ## Пути к файлам
 
 У сессии R есть понятие рабочей директории:
