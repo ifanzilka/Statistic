@@ -162,3 +162,20 @@ OR (Поиск по шаблону и замнена)
     ## [3] "Б?з труд? н? выт?щ?шь ? рыбку ?з пруд?" "Р?бот? н? волк, в л?с н? уб?ж?т"
 
 
+
+## Функции tolower/toupper
+
+Манипулирование регистром:
+
+    tolower(month.name)
+#
+    ##  [1] "january"   "february"  "march"     "april"     "may"       "june"      "july"      "august"   
+    ##  [9] "september" "october"   "november"  "december"
+OR
+
+    toupper(month.abb)
+#
+    ##  [1] "JAN" "FEB" "MAR" "APR" "MAY" "JUN" "JUL" "AUG" "SEP" "OCT" "NOV" "DEC"
+
+
+
