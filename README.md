@@ -5,4 +5,4 @@
 * [Beginning (Установка)](https://github.com/ifanzilka/Statistic_for_R/blob/main/1.Beginning/readme.md)
 * [Module 1: basic structures and concepts(базовые структуры и понятия)](https://github.com/ifanzilka/Statistic_for_R/blob/main/Module%201:%20basic%20structures%20and%20concepts/readme.md)
 * [Module 2: advanced structures](https://github.com/ifanzilka/Statistic_for_R/blob/main/Module%202:%20advanced%20structures/module2.md)
-* [Module 3: advanced programming](https://github.com/ifanzilka/Statistic_for_R/blob/main/Module%202:%20advanced%20structures/module2.md)
+* [Module 3: advanced programming](https://github.com/ifanzilka/Statistic_for_R/blob/main/Module%203:%20advanced%20programming/3advanced_prjgramming.md)
