@@ -1,4 +1,23 @@
 ## [Back](https://github.com/ifanzilka/Statistic_for_R/blob/main/Module%202:%20advanced%20structures/module2.md)
+* [Строки](https://github.com/ifanzilka/Statistic_for_R/blob/main/Module%202:%20advanced%20structures/2.3/Factors_and_strings.md#%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8)
+* [Функции paste/paste0](https://github.com/ifanzilka/Statistic_for_R/blob/main/Module%202:%20advanced%20structures/2.3/Factors_and_strings.md#%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8-pastepaste0)
+* [Функция strsplit](https://github.com/ifanzilka/Statistic_for_R/blob/main/Module%202:%20advanced%20structures/2.3/Factors_and_strings.md#%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F-strsplit)
+* [Регулярные выражения](https://github.com/ifanzilka/Statistic_for_R/blob/main/Module%202:%20advanced%20structures/2.3/Factors_and_strings.md#%D1%80%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D1%8B%D0%B5-%D0%B2%D1%8B%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F)
+* [Пакет stringr](https://github.com/ifanzilka/Statistic_for_R/blob/main/Module%202:%20advanced%20structures/2.3/Factors_and_strings.md#%D0%BF%D0%B0%D0%BA%D0%B5%D1%82-stringr)
+* [Функции tolower/toupper
+](https://github.com/ifanzilka/Statistic_for_R/blob/main/Module%202:%20advanced%20structures/2.3/Factors_and_strings.md#%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8-tolowertoupper)
+* [Задача](https://github.com/ifanzilka/Statistic_for_R/blob/main/Module%202:%20advanced%20structures/2.3/Factors_and_strings.md#%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0)
+* [Пути к файлам](https://github.com/ifanzilka/Statistic_for_R/blob/main/Module%202:%20advanced%20structures/2.3/Factors_and_strings.md#%D0%BF%D1%83%D1%82%D0%B8-%D0%BA-%D1%84%D0%B0%D0%B9%D0%BB%D0%B0%D0%BC)
+* [Форматирование чисел](https://github.com/ifanzilka/Statistic_for_R/blob/main/Module%202:%20advanced%20structures/2.3/Factors_and_strings.md#%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D1%87%D0%B8%D1%81%D0%B5%D0%BB)
+* [Функция cat](https://github.com/ifanzilka/Statistic_for_R/blob/main/Module%202:%20advanced%20structures/2.3/Factors_and_strings.md#%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F-cat)
+* [Факторы](https://github.com/ifanzilka/Statistic_for_R/blob/main/Module%202:%20advanced%20structures/2.3/Factors_and_strings.md#%D1%84%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D1%8B)
+* [Уровни фактора](https://github.com/ifanzilka/Statistic_for_R/blob/main/Module%202:%20advanced%20structures/2.3/Factors_and_strings.md#%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D0%B8-%D1%84%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D0%B0-1)
+* [Преобразование уровней фактора](https://github.com/ifanzilka/Statistic_for_R/blob/main/Module%202:%20advanced%20structures/2.3/Factors_and_strings.md#%D0%BF%D1%80%D0%B5%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D0%B5%D0%B9-%D1%84%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D0%B0)
+* [Упорядоченные факторы](https://github.com/ifanzilka/Statistic_for_R/blob/main/Module%202:%20advanced%20structures/2.3/Factors_and_strings.md#%D1%83%D0%BF%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D1%87%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D1%84%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D1%8B)
+* [Преобразование количественной переменной в качественную](https://github.com/ifanzilka/Statistic_for_R/blob/main/Module%202:%20advanced%20structures/2.3/Factors_and_strings.md#%D0%BF%D1%80%D0%B5%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BA%D0%BE%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9-%D0%B2-%D0%BA%D0%B0%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%83%D1%8E)
+* [options](https://github.com/ifanzilka/Statistic_for_R/blob/main/Module%202:%20advanced%20structures/2.3/Factors_and_strings.md#options)
+* [Задача](https://github.com/ifanzilka/Statistic_for_R/blob/main/Module%202:%20advanced%20structures/2.3/Factors_and_strings.md#%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0-1)
+* [Работа с csv файлом](https://github.com/ifanzilka/Statistic_for_R/blob/main/Module%202:%20advanced%20structures/2.3/Factors_and_strings.md#%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-csv-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%BC)
 
 
 ## Строки
