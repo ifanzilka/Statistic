@@ -60,24 +60,17 @@
 #
      ## [1] 25
 
-Бинарные операторы
+## Бинарные операторы
 
 Оператор x %in% y: есть ли вхождения элементов x в y?
 
-1:5 %in% c(1, 2, 5)
+    1:5 %in% c(1, 2, 5)
+#
+    ## [1]  TRUE  TRUE FALSE FALSE  TRUE
+#
+    "%nin%" <- function(x, y) !(x %in% y)
+    1:5 %nin% c(1, 2, 5)
+#
+    ## [1] FALSE FALSE  TRUE  TRUE FALSE
 
-## [1]  TRUE  TRUE FALSE FALSE  TRUE
 
-"%nin%" <- function(x, y) !(x %in% y)
-1:5 %nin% c(1, 2, 5)
-
-## [1] FALSE FALSE  TRUE  TRUE FALSE
-
-Глоссарий
-
-?"function"
-
-Source code for functions, ?methods
-
-Argument matching, ellipsis (?"...")
-Использовать как обычный объект str(c(mean, max)) ## List of 2 ## $ :function (x, ...) ## $ :function (..., na.rm = FALSE) fun_list <- c(mean, max) sapply(fun_list, function(f) f(1:100)) ## [1] 50.5 100.0 
